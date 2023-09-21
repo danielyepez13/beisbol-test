@@ -6,15 +6,15 @@ import baseballMain from "../img/baseball-main.jpg";
 
 <Layout title="Beisbol">
   <main>
-    <div class="content flex flex-col justify-start w-11/12 p-5">
-      <div class="first-post w-7/12 ml-24">
+    <div class="content flex flex-col justify-start lg:w-11/12 lg:p-5">
+      <div class="first-post lg:w-7/12 lg:ml-24">
         <Image src={baseballMain} alt="baseball" class="rounded-t-md" />
 		<div class="info-post p-4">
 			<h2 class="text-2xl">Noticia 1</h2>
 			<p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, nostrum aspernatur? Impedit mollitia nisi sit! Culpa unde asperiores pariatur quaerat? Nulla quisquam mollitia aut beatae?</p>
 		</div>
       </div>
-	   <div class="second-post w-7/12 ml-24">
+	   <div class="second-post lg:w-7/12 lg:ml-24 mt-6">
         <Image src={baseballMain} alt="baseball" class="rounded-t-md" />
 		<div class="info-post p-4">
 			<h2 class="text-2xl">Noticia 2</h2>
@@ -22,8 +22,8 @@ import baseballMain from "../img/baseball-main.jpg";
 		</div>
       </div>
     </div>
-    <div class="sidebar relative">
-      <div class="table-positions fixed right-10 top-20 h-4/6 w-1/4 p-3 mr-8">
+    <div class="sidebar lg:relative flex justify-center">
+      <div class="table-positions lg:fixed lg:right-10 lg:top-20 lg:h-4/6 lg:w-1/4 lg:p-3 lg:mr-8 w-3/4">
         <h1 class="text-2xl mb-2">Posiciones</h1>
         <div
           class="team p-4 h-4/5 border-2 border-slate-200 border-solid rounded-md"
@@ -42,7 +42,7 @@ import baseballMain from "../img/baseball-main.jpg";
             <tbody>
               <tr>
                 <td>
-					<div class="flex">
+					<div class="flex gap-1">
 						<img src="https://midfield.mlbstatic.com/v1/team/142/spots/24" alt="">
 						MIN
 					</div>
@@ -54,7 +54,7 @@ import baseballMain from "../img/baseball-main.jpg";
               </tr>
               <tr>
                 <td>
-					<div class="flex">
+					<div class="flex gap-1">
 						<img src="https://midfield.mlbstatic.com/v1/team/114/spots/24" alt="">
 						CLE
 					</div>
@@ -66,7 +66,7 @@ import baseballMain from "../img/baseball-main.jpg";
               </tr>
               <tr>
                 <td>
-					<div class="flex">
+					<div class="flex gap-1">
 						<img src="https://midfield.mlbstatic.com/v1/team/116/spots/24" alt="">
 						DET
 					</div>
@@ -78,7 +78,7 @@ import baseballMain from "../img/baseball-main.jpg";
               </tr>
 			  <tr>
                 <td>
-					<div class="flex">
+					<div class="flex gap-1">
 						<img src="https://midfield.mlbstatic.com/v1/team/145/spots/24" alt="">
 						CWS
 					</div>
@@ -90,7 +90,7 @@ import baseballMain from "../img/baseball-main.jpg";
               </tr>
 			  <tr>
                 <td>
-					<div class="flex">
+					<div class="flex gap-1">
 						<img src="https://midfield.mlbstatic.com/v1/team/118/spots/24" alt="">
 						KC
 					</div>
