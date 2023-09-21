@@ -1,0 +1,123 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import baseballMain from "../img/baseball-main.jpg";
+---
+
+<Layout title="Beisbol">
+  <main>
+    <div class="content flex flex-col justify-start w-11/12 p-5">
+      <div class="first-post w-7/12 ml-24">
+        <Image src={baseballMain} alt="baseball" class="rounded-t-md" />
+		<div class="info-post p-4">
+			<h2 class="text-2xl">Noticia 1</h2>
+			<p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, nostrum aspernatur? Impedit mollitia nisi sit! Culpa unde asperiores pariatur quaerat? Nulla quisquam mollitia aut beatae?</p>
+		</div>
+      </div>
+	   <div class="second-post w-7/12 ml-24">
+        <Image src={baseballMain} alt="baseball" class="rounded-t-md" />
+		<div class="info-post p-4">
+			<h2 class="text-2xl">Noticia 2</h2>
+			<p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, nostrum aspernatur? Impedit mollitia nisi sit! Culpa unde asperiores pariatur quaerat? Nulla quisquam mollitia aut beatae?</p>
+		</div>
+      </div>
+    </div>
+    <div class="sidebar relative">
+      <div class="table-positions fixed right-10 top-20 h-4/6 w-1/4 p-3 mr-8">
+        <h1 class="text-2xl mb-2">Posiciones</h1>
+        <div
+          class="team p-4 h-4/5 border-2 border-slate-200 border-solid rounded-md"
+        >
+          <h2 class="font-bold">AL Est</h2>
+          <table class="table-auto w-full text-center pb-3">
+            <thead class="border-solid border-b-2 border-sky-500">
+              <tr>
+                <th>Equipo</th>
+                <th>G</th>
+                <th>P</th>
+                <th>%</th>
+                <th>DIF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+					<div class="flex">
+						<img src="https://midfield.mlbstatic.com/v1/team/142/spots/24" alt="">
+						MIN
+					</div>
+				</td>
+                <td>81</td>
+                <td>72</td>
+                <td>.529</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>
+					<div class="flex">
+						<img src="https://midfield.mlbstatic.com/v1/team/114/spots/24" alt="">
+						CLE
+					</div>
+				</td>
+                <td>72</td>
+                <td>81</td>
+                <td>.471</td>
+                <td>9.0</td>
+              </tr>
+              <tr>
+                <td>
+					<div class="flex">
+						<img src="https://midfield.mlbstatic.com/v1/team/116/spots/24" alt="">
+						DET
+					</div>
+				</td>
+                <td>71</td>
+                <td>81</td>
+                <td>.467</td>
+                <td>9.5</td>
+              </tr>
+			  <tr>
+                <td>
+					<div class="flex">
+						<img src="https://midfield.mlbstatic.com/v1/team/145/spots/24" alt="">
+						CWS
+					</div>
+				</td>
+                <td>58</td>
+                <td>95</td>
+                <td>.95</td>
+                <td>23.0</td>
+              </tr>
+			  <tr>
+                <td>
+					<div class="flex">
+						<img src="https://midfield.mlbstatic.com/v1/team/118/spots/24" alt="">
+						KC
+					</div>
+				</td>
+                <td>51</td>
+                <td>102</td>
+                <td>.333</td>
+                <td>30.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+	table {
+		margin-top: 1rem;
+	}
+
+	.table-auto {
+		height: 86%;
+	}
+
+	.first-post {
+		box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+	}
+</style>
